@@ -1078,3 +1078,4 @@ DLL_EXPORT_XLSXIO void xlsxiowrite_next_row (xlsxiowriter handle)
   handle->pcurrentcolumn = &handle->columninfo;
 }
 
+#include "getopt.c"
