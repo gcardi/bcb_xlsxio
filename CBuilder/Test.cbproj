@@ -70,7 +70,7 @@
         <SanitizedProjectName>Test</SanitizedProjectName>
         <IncludePath>..\..\bcc_zlib\contrib\minizip\;..\include;..\..\bcc_zlib\;$(IncludePath)</IncludePath>
         <_TCHARMapping>wchar_t</_TCHARMapping>
-        <ILINK_LibraryPath>..;..\..\bcc_zlib\contrib\minizip\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <ILINK_LibraryPath>..\static_libs;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <VerInfo_Locale>1040</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
