@@ -6,9 +6,7 @@
 *.layout
 *.depend
 *.URL
-*.a
 *.so
-*.lib
 *.bak
 *.dcp
 *.dcu
