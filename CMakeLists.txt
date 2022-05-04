@@ -17,10 +17,10 @@ MESSAGE(STATUS "XLSX I/O library version: ${XLSXIO_VER}")
 
 # parameters
 OPTION(BUILD_STATIC "Build static libraries" ON)
-OPTION(BUILD_SHARED "Build shared libraries" ON)
-OPTION(BUILD_PC_FILES "Build pkg-config .pc" ON)
+OPTION(BUILD_SHARED "Build shared libraries" OFF)
+OPTION(BUILD_PC_FILES "Build pkg-config .pc" OFF)
 OPTION(BUILD_TOOLS "Build tools" ON)
-OPTION(BUILD_EXAMPLES "Build examples" ON)
+OPTION(BUILD_EXAMPLES "Build examples" OFF)
 OPTION(WITH_LIBZIP "Use libzip instead of Minizip" OFF)
 OPTION(WITH_WIDE "Also build UTF-16 library (libxlsxio_readw)" OFF)
 SET(ZLIB_DIR "" CACHE PATH "Path to the zlib library")
