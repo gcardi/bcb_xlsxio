@@ -216,21 +216,21 @@ xlsxiowrite_close(handle);
 
 All the needed precompiled static libs are in the static_libs dir of this repository. You just need to link them to your project. You also need to reach all required header files, i.e. you have to add the needed paths to these files to your project settings.
 
-The header files are in these other forked repository:
+Add these paths to the include files search path:
+
+  include (this repo)
+
+There is a test project under CBuilder folder in this repo.
+
+## Notes to build bcb_xlsxio with BCB using CMake
+
+The needed header files are in these other forked repository:
 
 https://github.com/gcardi/bcc_zlib
 
 https://github.com/gcardi/external_zlib
 
-Add these paths to the include files search path:
-
-bcc_zlib\contrib\minizip\
-bcc_zlib\
-include (this repo)
-
-## Notes to build bcb_xlsxio with BCB using CMake
-
-For bcc64:
+To build the library, for bcc64:
 
 cmake -DCMAKE_C_COMPILER=bcc64.exe -DCMAKE_CXX_COMPILER=bcc64.exe -DCMAKE_BUILD_TYPE_INIT=Release -DZLIB_LIBRARY=../zlib/zlibstatic.a -DZLIB_INCLUDE_DIR=../zlib -DMINIZIP_LIBRARIES=../zlib/zlibstatic.a -DMINIZIP_INCLUDE_DIRS=../zlib;../zlib/contrib -DEXPAT_LIBRARY=libexpat.a -DEXPAT_INCLUDE_DIR=expat/lib -G Ninja .
 
