@@ -68,7 +68,7 @@
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
         <Multithreaded>true</Multithreaded>
         <SanitizedProjectName>Test</SanitizedProjectName>
-        <IncludePath>..\..\bcc_zlib\contrib\minizip\;..\include;..\..\bcc_zlib\;$(IncludePath)</IncludePath>
+        <IncludePath>..\include;$(IncludePath)</IncludePath>
         <_TCHARMapping>wchar_t</_TCHARMapping>
         <ILINK_LibraryPath>..\static_libs;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <VerInfo_Locale>1040</VerInfo_Locale>
