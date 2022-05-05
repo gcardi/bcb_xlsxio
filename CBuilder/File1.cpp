@@ -34,11 +34,14 @@
 
 
 // These items must be on the IDE's library search path
+/*
 #pragma comment( lib, "xlsxio_write" )
 #pragma comment( lib, "xlsxio_read" )
 #pragma comment( lib, "zlibstatic" )
 #pragma comment( lib, "minizip" )
 #pragma comment( lib, "libexpat" )
+*/
+#pragma comment( lib, "xlsxio" )
 
 // See original repositories:
 //   https://github.com/madler/zlib
